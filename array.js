@@ -80,8 +80,61 @@
 //   return val.active === true;
 // });
 // console.log(res);
-let ages = [10,20,30,40,50]
-let new_ages = ages.filter((age) =>{
-    return age > 30;
-})
-console.log(new_ages)
+// let ages = [10,20,30,40,50]
+// let new_ages = ages.filter((age) =>{
+//     return age > 30;
+// })
+// console.log(new_ages)
+// //reduce
+// let num = [10,20,30,40]
+// let result = num.reduce((acc,n) =>{
+//     return acc+n
+// },0)
+// console.log(result)
+// let products = [
+//   { id: 111, name: "mouse", brand: "dell", price: 500 },
+//   { id: 112, name: "keyboard", brand: "tvs", price: 1100 },
+//   { id: 113, name: "printer", brand: "dell", price: 540 },
+//   { id: 114, name: "keyboard", brand: "hp", price: 600 },
+//   { id: 115, name: "cpu", brand: "intel", price: 5000 },
+// ];
+// let result = products.filter((product) =>{
+//     return product.name=="keyboard"
+// })
+// console.log(result)
+//=======2-d array==
+let m1 = [[5,6,1],[3,2,1],[9,8,4]]
+let m2 = [[3,2,1],[4,4,1],[7,6,4]]
+let s = [[],[],[]]
+process.stdout.write(`\n Matrix m1\n`)
+{
+    for(r=0 ; r<3 ; r++){
+        for(c=0; c<3; c++){
+            process.stdout.write(`${m1[r][c]}`)
+            process.stdout.write(` `)
+        }
+        process.stdout.write(`\n`)
+    }
+}
+process.stdout.write(`\n Matrix m2\n`)
+{
+    for(r=0 ; r<3 ; r++){
+        for(c=0; c<3; c++){
+            process.stdout.write(`${m2[r][c]}`)
+            process.stdout.write(` `)
+        }
+        process.stdout.write(`\n`)
+    }
+}
+process.stdout.write(`sum of matrix \n`)
+{
+    for(r=0 ; r<3 ; r++){
+        for(c=0; c<3; c++){
+            s[r][c] = m1[r][c] + m2[r][c]
+            process.stdout.write(`${s[r][c]}`)
+            process.stdout.write(` `)
+        }
+        process.stdout.write(`\n`)
+    }
+}
+    
